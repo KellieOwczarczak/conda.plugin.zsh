@@ -10,7 +10,7 @@ The plugin includes a Prefix, Separator, and Suffix predefined as well as a pred
 
 ## Aliases included!
 The plugin also has a few aliases for some conda commands I often use.
-
+``
 cact='conda activate'
 cdeact='conda deactivate'
 cls='conda list'
@@ -18,3 +18,4 @@ cels='conda env list'
 ccen='conda create --name'
 conup='conda update'
 conin='conda install'
+``
