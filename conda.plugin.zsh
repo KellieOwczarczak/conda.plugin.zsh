@@ -22,7 +22,7 @@ function conda_env() {
 # Python version
 function conda_py_ver() {
   if [[ -n ${CONDA_DEFAULT_ENV} ]]; then
-    echo "py $(python -V | cut -d ' ' -f 2)"
+    echo "py:$(python -V | cut -d ' ' -f 2)"
   fi
 }
 
@@ -38,7 +38,7 @@ alias conin='conda install'
 # Default values for the appearance of the prompt. Customize in your theme if you like.
 ZSH_THEME_CONDA_PROMPT_PREFIX="%{$FG[028]%}("
 ZSH_THEME_CONDA_PROMPT_SUFFIX=")%{$reset_color%}"
-ZSH_THEME_CONDA_PROMPT_SEPARATOR=" | "
+ZSH_THEME_CONDA_PROMPT_SEPARATOR="|"
 
 
 #Disable conda prompt changes
