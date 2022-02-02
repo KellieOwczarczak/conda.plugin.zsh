@@ -7,6 +7,11 @@ function conda_prompt_info() {
   echo "${ZSH_THEME_CONDA_PROMPT_PREFIX}$(conda_env)${ZSH_THEME_CONDA_PROMPT_SEPARATOR}$(conda_py_ver)${ZSH_THEME_CONDA_PROMPT_SUFFIX}"
 }
 
+# a simpler prompt (this is the more tradtional version)
+function conda_env_prompt_info() {
+  echo "${ZSH_THEME_CONDA_PROMPT_PREFIX}$(conda_env)${ZSH_THEME_CONDA_PROMPT_SUFFIX}"
+}
+
 # Conda evniornment
 function conda_env() {
   if [[ -n ${CONDA_DEFAULT_ENV} ]]; then
@@ -39,4 +44,4 @@ ZSH_THEME_CONDA_PROMPT_SEPARATOR=" | "
 #Disable conda prompt changes
 #https://conda.io/docs/user-guide/configuration/use-condarc.html#change-command-prompt-changeps1
 #changeps1: False
-`conda config --set changeps1 false`
+#`conda config --set changeps1 false`
