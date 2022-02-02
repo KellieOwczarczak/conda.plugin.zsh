@@ -19,3 +19,7 @@ ccen='conda create --name'
 conup='conda update'  
 conin='conda install'  
 ``
+
+## Plugin in Action
+This screen shot shows the Conda Plugin being used in my custom theme and a couple of the aliases being utilized to activate and deactive a conda environment.
+![Screen Shot 2022-02-02 at 12 33 08](https://user-images.githubusercontent.com/59445562/152209404-0035d5bc-fa7f-4701-b91a-aeda09a14afe.png)
